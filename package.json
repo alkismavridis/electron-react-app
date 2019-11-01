@@ -2,14 +2,23 @@
   "name": "i3settings",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
+    "@types/jest": "^24.0.19",
+    "@types/node": "^12.11.7",
+    "@types/react": "^16.9.10",
+    "@types/react-dom": "^16.9.2",
+    "node-sass": "^4.13.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "rxjs": "^6.5.3",
+    "typescript": "^3.6.4"
   },
+  "main": "src/electron-starter.js",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp src/StartElectron.js build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -27,5 +36,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
